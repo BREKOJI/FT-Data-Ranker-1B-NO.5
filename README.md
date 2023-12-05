@@ -5,4 +5,4 @@
 * finetuned_model：微调后的全参数模型
 * lm-training：官方训练代码
 ## data-juicer数据处理代码
-* 细节见 data_juicer_recipes/README.md
+* [细节见] (data_juicer_recipes/README.md)
