@@ -5,7 +5,7 @@
 * finetuned_model：微调后的全参数模型
 * lm-training：官方训练代码
 ## data-juicer数据处理算子代码
-* 细节见 [data_juicer_recipes/README.md](data_juicer_recipes/README.md)
+* 方案细节见 [data_juicer_recipes/README.md](data_juicer_recipes/README.md)
 ## 参考
 * data-juicer官方文档：[https://github.com/alibaba/data-juicer/tree/main](https://github.com/alibaba/data-juicer/tree/main)
    * 算子库：[https://github.com/alibaba/data-juicer/blob/main/docs/Operators_ZH.md](https://github.com/alibaba/data-juicer/blob/main/docs/Operators_ZH.md)
