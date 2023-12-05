@@ -1,4 +1,4 @@
-# FT-Data-Ranker-1B-NO.5
+# FT-Data-Ranker-1B-NO.5方案
 ## 文件夹内容
 * data_juicer_recipes/refine_data_config.yaml：data-juicer数据处理算子代码
 * finetune_data/test_1b.jsonl：微调数据集
