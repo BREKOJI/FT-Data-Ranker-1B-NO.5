@@ -6,3 +6,5 @@
 * lm-training：官方训练代码
 ## data-juicer数据处理代码
 * 细节见 [data_juicer_recipes/README.md](data_juicer_recipes/README.md)
+## 参考
+* [文档](https://github.com/alibaba/data-juicer/tree/main)
