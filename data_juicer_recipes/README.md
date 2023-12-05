@@ -1,1 +1,16 @@
-
+# 方案细节
+## 算子解释
+* document_deduplicator、document_simhash_deduplicator、document_minhash_deduplicator 三个算子进行文档去重
+* alphanumeric_filter 过滤字母比例过低的样本
+* character_repetition_filter 过滤字符重复率过高的样本
+* flagged_words_filter 过滤标记词汇超过字段一定占比的样本
+* perplexity_filter 过滤困惑度高于一定值的样本
+* maximum_line_length_filter 过滤样本中最大长度语句过短或过长的样本
+* text_length_filter 过滤样本过短或过长的样本
+## 算子参数配置
+* alphanumeric_filter 过滤字母比例低于0.1的样本，根据trace文件过滤的样本看来这些样本以换行符、制表符等转义字符居多不利于模型的微调
+* character_repetition_filter 过滤字符重复率过高的样本，我们在这里将阈值设置为了0.6，观察trace可以发现过滤的样本中以特殊字符构成的表格框图等居多，不适合作为模型微调的数据
+* flagged_words_filter 我们将阈值设置为0.007，观察trace可以发现过滤的样本中有较多标记词汇，而继续调低，则会把部分较为正常的数据包括在内
+* perplexity_filter 我们将阈值设置在了2000左右，根据log文件我们可以发现大部分的数据都在1700以内，观察trace可以发现超过2500的困惑度语句不够通顺，我们尝试将阈值调小，但发现会过滤一些计算公式较多的样本
+* document_simhash_deduplicator 我们适当地在default基础上增大了块的数量和汉明距离
+* document_minhash_deduplicator 我们将阈值设置为0.7
