@@ -8,4 +8,4 @@
 * 细节见 [data_juicer_recipes/README.md](data_juicer_recipes/README.md)
 ## 参考
 * data-juicer官方文档：[https://github.com/alibaba/data-juicer/tree/main](https://github.com/alibaba/data-juicer/tree/main)
-  ** 算子库：[https://github.com/alibaba/data-juicer/blob/main/docs/Operators_ZH.md?spm=a2c22.12281978.0.0.55424d4eF9kcZP&file=Operators_ZH.md](https://github.com/alibaba/data-juicer/blob/main/docs/Operators_ZH.md?spm=a2c22.12281978.0.0.55424d4eF9kcZP&file=Operators_ZH.md)
+ * 算子库：[https://github.com/alibaba/data-juicer/blob/main/docs/Operators_ZH.md?spm=a2c22.12281978.0.0.55424d4eF9kcZP&file=Operators_ZH.md](https://github.com/alibaba/data-juicer/blob/main/docs/Operators_ZH.md?spm=a2c22.12281978.0.0.55424d4eF9kcZP&file=Operators_ZH.md)
